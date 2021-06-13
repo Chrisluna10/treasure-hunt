@@ -1,0 +1,119 @@
+/* Main title  */
+h1 {
+  color: navy;
+  font-family: serif;
+  font-size: 50px;
+  text-align: center;
+  animation: titleA 4s;
+}
+/* This is the main logo */
+#dogPic {
+  display: flex;
+  justify-content:center;
+  animation: dogPic 4s;
+}
+#ruleList {
+  color: navy;
+  font-size: 35px;
+  font-style: oblique;
+  text-align: justify;
+}
+/* #rules {
+  color: navy;
+  font-size: 35px;
+  font-style: oblique;
+  text-align: justify;
+}
+}
+#ruleList {
+  font-size: 20px;
+  text-align: justify;
+//edit
+  list-style-position: inside;
+}  */
+table {
+    border-spacing: 0px;
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    animation: shaky1 4s infinite;
+    animation: pulse 3s infinite;
+}
+td {
+    border: 10px solid rgba(200, 0, 0, 0.5);
+}
+body {
+  background-color: lightblue;
+  background-image: url(https://us.123rf.com/450wm/rudall30/rudall301511/rudall30151100056/48108567-cartoon-illustration-of-a-park-with-cityscape-as-the-background.jpg?ver=6);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Makes button change on hover */
+button:hover{
+    color: Green;
+    font-style: oblique;
+}
+
+}
+/* Footer font */
+footer {
+  font-size: 30px;
+  font-family: monospace;
+}
+}
+/* Animation for main Dog */
+
+@keyframes dogPic {
+  to {
+    transform: translateX(100%);
+  }
+  from {
+    transform: translateX(0%);
+  }
+}
+
+  @keyframes titleA {
+    50%{
+      transform: scaleX(0.6);
+      opacity: 1;
+    }
+    100%{
+      transform: scaleX(1.2);
+      opacity: 2;
+    }
+}
+/* Animation for table movement */
+    @keyframes shaky1 {
+      0%{
+        transform: scaleX(0.6);
+        opacity: 1;
+      }
+      100%{
+        transform: scaleX(1);
+        opacity: 5 ;
+      }
+}
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.93)
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+      }
+      40% {
+        transform: scale(0.97)
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+      }
+      70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+    85% {
+      transform: scale(0.97);
+  		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  	}
+    }
+	 100% {
+		transform: scale(0.93);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
